@@ -1,0 +1,7 @@
+﻿@using SimpleMVCProject.Web.Service
+
+@inject ISampleService sampleService
+
+<p>
+    @string.Join(" + ", sampleService.GetSampleStrings())
+</p>

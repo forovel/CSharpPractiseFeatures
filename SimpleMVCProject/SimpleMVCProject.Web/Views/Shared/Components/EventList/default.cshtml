@@ -1,0 +1,11 @@
+﻿@using SimpleMVCProject.Web.Models;
+
+@model IEnumerable<Event>
+
+<h3>Formula 1 Calendar</h3>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><div>@item.Day.ToString("D")</div><div>@item.Text</div></li>
+    }
+</ul>
